@@ -1,0 +1,120 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body{
+
+	font-family: "Arial MT";
+	font-size: 20px;
+	background-color: #e8e8e8;
+	color: #273d46;
+	line-height: 36px;
+	font-weight: 400;
+}
+.content { 
+	width: 761px;
+	margin: 123px auto;
+}
+.list{
+	padding: 0 0 137px;
+}
+.list li{
+	padding: 0 0 0 35px;
+}
+.list li:before{
+	content: '';
+	display: inline-block;
+	width: 35px;
+	height: 20px;
+	background: url("../img/icons/check_icon.png") left no-repeat;
+}
+.list li:nth-child(1){ 
+	text-decoration: line-through;
+}
+.list li:nth-child(2){
+	font-weight: 700;
+}
+.list li:nth-child(3){
+	font-style: italic;
+}
+.list li:nth-child(4){
+	text-transform: uppercase;
+}
+.list li:hover:nth-child(1){ 
+	text-decoration: none;
+}
+.list li:hover:nth-child(2){
+	font-weight: 400;
+	color: #d55a5a;
+}
+.list li:hover:nth-child(2)::before{
+	content: '';
+	display: inline-block;
+	width: 35px;
+	height: 20px;
+	background: url("../img/icons/check_icon_active.png") left no-repeat;
+}
+.list li:hover:nth-child(3){
+	font-style: normal;
+}
+.list li:hover:nth-child(4){
+	text-transform: none;
+}
+.textbutton { 
+	width: 199px;
+	height: 44px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	background-color: #80b7b3;
+	border-radius: 22px;
+	padding: 0 0 0 0;
+	margin: 0 0 125px 27px;
+}
+.textbutton:hover{
+	background-color: #3a5856;
+}
+.textbutton:active{
+	background-color: #818181;
+}
+.arrow{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	display: block;
+	padding: 0 0 0 15px;
+}
+.arrow::after{
+	content: '';
+	display: inline-block;
+	width: 21px;
+	height: 14px;
+	background: url("../img/icons/arrow.png") left no-repeat;
+	margin: 0 0 -2px 11px;
+}
+.textblock p{
+	color: #000000;
+	font-size: 18px;
+	line-height: 28px;
+	margin: 0 0 43px 0;
+}
+.textblock p:first-child::first-line{
+	color: #f00;
+}
+.textblock p:last-child::first-letter{
+	color: #f00;
+	margin: 0;
+}
