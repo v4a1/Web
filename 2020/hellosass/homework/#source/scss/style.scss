@@ -1,0 +1,107 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+body{
+    font-family: "Arial MT";
+	font-size: 20px;
+	background-color: #e8e8e8;
+	color: #273d46;
+	line-height: 36px;
+	font-weight: 400;
+}
+.content { 
+	width: 761px;
+	margin: 123px auto;
+}
+.list{
+    padding: 0 0 137px;
+    li{
+        padding: 0 0 0 35px;
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 35px;
+            height: 20px;
+            background: url("../img/icons/check_icon.png") left no-repeat;        
+        }             
+        &:nth-child(1){ 
+            text-decoration: line-through;
+        }
+        &:nth-child(2){
+            font-weight: 700;
+        }
+        &:nth-child(3){
+            font-style: italic;
+        }
+        &:nth-child(4){
+            text-transform: uppercase;
+        }
+        &:hover:nth-child(1){ 
+            text-decoration: none;
+        }
+        &:hover:nth-child(2){
+            font-weight: 400;
+            color: #d55a5a;
+        }
+        &:hover:nth-child(2)::before{
+            content: '';
+            display: inline-block;
+            width: 35px;
+            height: 20px;
+            background: url("../img/icons/check_icon_active.png") left no-repeat;
+        }
+        &:hover:nth-child(3){
+            font-style: normal;
+        }
+        &:hover:nth-child(4){
+            text-transform: none;
+        }
+    }
+}
+.textbutton { 
+	width: 199px;
+	height: 44px;
+	box-shadow: 0 6px 40px rgba(128, 183, 179, 0.54);
+	background-color: #80b7b3;
+	border-radius: 22px;
+	padding: 0 0 0 0;
+    margin: 0 0 125px 27px;
+    &:hover{
+        background-color: #3a5856;
+    }
+    &:active{
+        background-color: #818181;
+    }
+}
+.arrow{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	display: block;
+    padding: 0 0 0 15px;
+    &::after{
+        content: '';
+        display: inline-block;
+        width: 21px;
+        height: 14px;
+        background: url("../img/icons/arrow.png") left no-repeat;
+        margin: 0 0 -2px 11px;
+    }
+}
+.textblock{
+    p{
+        color: #000000;
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 0 43px 0;
+        &:first-child::first-line{
+            color: #f00;
+        }
+        &:last-child::first-letter{
+            color: #f00;
+            margin: 0;
+        }
+    }
+} 
