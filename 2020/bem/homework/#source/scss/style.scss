@@ -5,6 +5,28 @@
 body{
 	font-family: Lato;
 }
+.menu{
+	&__list{
+		text-align: center;
+	}
+	&__list li{
+		display: inline;
+		padding: 0 0 0 35px;
+	}
+	&__list li:first-child{
+		padding: 0 0 0 0;
+	}
+	&__item{
+		color: #3c3c3c;
+		font-size: 15px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-weight: 400;
+	}
+	&__active{
+		color: #ada074;
+	}
+}
 .title {
 	font-size: 34px;
 	font-weight: 700;
@@ -24,38 +46,42 @@ body{
 		margin: 0px 0px 0px -25px;
 	}
 }
+.button{
+	display: block;
+	height: 47px;
+	width: 182px;
+	padding: 16px 0 0;
+	text-align: center;
+}
 .header{
 	margin: 0 auto;
 	max-width: 1920px;
 	&__body{
-		height: 1189px;
-		margin: -109px 0 0 -11px;
-		padding: 0 0 0 10px;
-		border-top: 1px solid #000;
+		height: 1080px;
+		padding: 165px 0 0;
 		background: url("../img/header/BG-Header.png") center no-repeat;
 	}
-	&__logo{
-		margin: 274px 0 159px;
-	};
 	&__logo a{
 		display: block;
 		width: 195px;
 		height: 123px;
 		background: url("../img/header/logo.png") no-repeat;
-		margin: 0 auto;
+		margin: 0 auto 159px;
 	}
 	&__title{
 		color: #ffffff;
 		font-size: 34px;
 		line-height: 40px;
 		text-transform: uppercase;
-		font-family: "Lato Black";
 		font-weight: 900;
 		letter-spacing: 5.43px;
 		text-align: center;
+		padding: 0 0 40px 0;
 	};
 	&__title:after{
 		background-color: #fff;
+		width: 105px;
+		margin: 0px 0px 0px -52px;
 	}
 	&__title span{
 		font-family: Lato;
@@ -65,17 +91,14 @@ body{
 	}
 	&__button{
 		margin: 0 0 75px;
+	
 	};
 	&__button a{
-		display: block;
-		margin: 278px auto 0;
-		height: 47px;
-		width: 182px;
+		margin: 228px auto 0;
 		border: 1px solid #fff;
-		text-align: center;
-		color: #fff;
-		padding: 16px 0 0;
+		color: #fff;	
 	}
+	
 	&__icodown a{
 		display: block;
 		height: 10px;
@@ -84,10 +107,24 @@ body{
 		background: url("../img/header/Arrow-down.png") no-repeat;
 	}
 }
+
+.mainmenu{
+	margin: 0 auto ;
+	max-width: 1920px;
+	&__body{
+		height: 58px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+}
 .about {
+	margin: 0 auto;
+	max-width: 1920px;
 	&__body {
 		max-width: 823px;
-		margin: 0px auto;
+		margin: 130px auto 0;
 	}
 	&__header {
 		margin: 0px 0px 65px 0px;
@@ -110,7 +147,7 @@ body{
 		margin: 0px -15px;
 	}
 	&__column {
-		padding: 0px 15px;
+		padding: 0px 15px 95px;
 		flex: 0 0 33.333%;
 	}
 }
@@ -142,3 +179,33 @@ body{
 		font-size: 14px;
 	}
 }
+.portfolio{
+	margin: 0 auto;
+	max-width: 1920px;	
+	background: #f3f3f3;
+	padding: 107px 0 0 0;
+	&__body{	
+	}
+	&__header{
+	}
+	&__title{}
+	&__menu{
+		margin: 51px 0 136px;
+	}
+	&__items{
+		display: flex;
+	}
+	&__item{
+		display: block;
+		height: 365px;
+		width: 538px;
+		background: #eaeaea;
+	}
+	&__button a{
+		margin: 0 auto 0;
+		border: 1px solid #000;
+		color: #000;
+	}
+}
+
+
