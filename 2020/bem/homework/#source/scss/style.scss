@@ -1,29 +1,29 @@
 // Файл обнуляющих стилей
 @import "nullstyle.scss";
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:400, 300, 700, 900);
 
-body{
+body {
 	font-family: Lato;
 }
-.menu{
-	&__list{
+.menu {
+	&__list {
 		text-align: center;
 	}
-	&__list li{
+	&__list li {
 		display: inline;
 		padding: 0 0 0 35px;
 	}
-	&__list li:first-child{
+	&__list li:first-child {
 		padding: 0 0 0 0;
 	}
-	&__item{
+	&__item {
 		color: #3c3c3c;
 		font-size: 15px;
 		font-weight: 400;
 		text-transform: uppercase;
 		font-weight: 400;
 	}
-	&__active{
+	&__active {
 		color: #ada074;
 	}
 }
@@ -35,8 +35,8 @@ body{
 	position: relative;
 	text-align: center;
 	padding: 0px 0px 30px 0px;
-	&:after{
-		content:'';
+	&:after {
+		content: "";
 		position: absolute;
 		width: 50px;
 		bottom: 0;
@@ -46,29 +46,29 @@ body{
 		margin: 0px 0px 0px -25px;
 	}
 }
-.button{
+.button {
 	display: block;
 	height: 47px;
 	width: 182px;
 	padding: 16px 0 0;
 	text-align: center;
 }
-.header{
+.header {
 	margin: 0 auto;
 	max-width: 1920px;
-	&__body{
+	&__body {
 		height: 1080px;
 		padding: 165px 0 0;
 		background: url("../img/header/BG-Header.png") center no-repeat;
 	}
-	&__logo a{
+	&__logo a {
 		display: block;
 		width: 195px;
 		height: 123px;
 		background: url("../img/header/logo.png") no-repeat;
 		margin: 0 auto 159px;
 	}
-	&__title{
+	&__title {
 		color: #ffffff;
 		font-size: 34px;
 		line-height: 40px;
@@ -77,29 +77,28 @@ body{
 		letter-spacing: 5.43px;
 		text-align: center;
 		padding: 0 0 40px 0;
-	};
-	&__title:after{
+	}
+	&__title:after {
 		background-color: #fff;
 		width: 105px;
 		margin: 0px 0px 0px -52px;
 	}
-	&__title span{
+	&__title span {
 		font-family: Lato;
 		font-size: 26px;
 		font-weight: 400;
 		letter-spacing: 4.15px;
 	}
-	&__button{
+	&__button {
 		margin: 0 0 75px;
-	
-	};
-	&__button a{
+	}
+	&__button a {
 		margin: 228px auto 0;
 		border: 1px solid #fff;
-		color: #fff;	
+		color: #fff;
 	}
-	
-	&__icodown a{
+
+	&__icodown a {
 		display: block;
 		height: 10px;
 		width: 17px;
@@ -108,16 +107,15 @@ body{
 	}
 }
 
-.mainmenu{
-	margin: 0 auto ;
+.mainmenu {
+	margin: 0 auto;
 	max-width: 1920px;
-	&__body{
+	&__body {
 		height: 58px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	
 }
 .about {
 	margin: 0 auto;
@@ -179,33 +177,68 @@ body{
 		font-size: 14px;
 	}
 }
-.portfolio{
+.portfolio {
 	margin: 0 auto;
-	max-width: 1920px;	
+	max-width: 1920px;
 	background: #f3f3f3;
-	padding: 107px 0 0 0;
-	&__body{	
+	padding: 107px 0 62px 0;
+	&__body {
 	}
-	&__header{
+	&__header {
 	}
-	&__title{}
-	&__menu{
+	&__title {
+	}
+	&__menu {
 		margin: 51px 0 136px;
 	}
-	&__items{
+	&__items {
 		display: flex;
+		width: 1103px;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		padding: 0 0 64px 0;
 	}
-	&__item{
+	&__item {
 		display: block;
 		height: 365px;
 		width: 538px;
 		background: #eaeaea;
+		margin: 0 0 16px 0;
 	}
-	&__button a{
+	&__item:nth-child(even) {
+		margin: 0 0 16px 27px;
+	}
+	&__button a {
 		margin: 0 auto 0;
 		border: 1px solid #000;
 		color: #000;
+		margin: 0 auto;
 	}
 }
+.partners {
+	margin: 0 auto;
+	max-width: 1920px;
+	&__body {
+		padding: 62px 0 0 0;
+		height: 389px;
+		background: url("../img/partners/bg.jpg") no-repeat;
+	}
 
-
+	&__header {
+		color: #ffffff;
+		font-size: 30px;
+		font-weight: 300;
+		letter-spacing: 1.8px;
+		text-align: center;
+		padding: 0 0 93px;
+	}
+	&__list {
+		margin: 0 auto;
+	}
+	&__items {
+		display: flex;
+	}
+	&__item {
+		display: inline-block;
+	}
+}
