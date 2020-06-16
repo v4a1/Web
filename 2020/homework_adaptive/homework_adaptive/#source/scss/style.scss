@@ -1,0 +1,163 @@
+// Файл обнуляющих стилей
+@import "_nullstyle";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.title {
+    color: #353738;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+}
+.text {
+    color: #848789;
+    font-size: 18px;
+    line-height: 34px;
+}
+.header {
+    height: 800px;
+    background: url("../img/header__bg.jpg") center no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0px 0px 0px;
+    &__container {
+    }
+
+    &__menu {
+        display: flex;
+    }
+}
+.menu {
+    padding: 33px 0px 0px 0px;
+    &__list {
+    }
+    &__img {
+        margin: 0px 64px 0px 64px;
+    }
+    li {
+        display: inline;
+        padding: 0px 0px 0px 30px;
+    }
+    li:first-child {
+        padding: 0px;
+    }
+    li a {
+        color: #4d4959;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.6px;
+    }
+}
+
+.content {
+    flex: 1 1 auto;
+}
+.block1 {
+    background: #f7f7f7;
+    padding: 117px 0px 142px 0px;
+    text-align: center;
+    &__container {
+        width: 1079px;
+        margin: 0 auto;
+    }
+
+    &__ico {
+        padding: 0px 0px 34px 0px;
+    }
+
+    &__title {
+        padding: 0px 0px 35px 0px;
+    }
+}
+.block2 {
+    &__row {
+        display: flex;
+    }
+    &__left {
+        background: url("../img/block2_img1.jpg") center no-repeat;
+        height: 100%;
+        flex: 1 1 66.666%;
+        justify-content: center;
+        align-self: center;
+    }
+    &__right {
+        flex: 1 1 33.333%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        flex: 1 1 66.666%;
+        display: flex;
+    }
+
+    &__ico {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__img {
+        flex: 1 1 33.333%;
+    }
+}
+
+.footer {
+    color: #848789;
+    font-size: 14px;
+    line-height: 17.87px;
+    background-color: #f7f7f7;
+    &__container {
+        max-width: 1101px;
+        margin: 0 auto;
+        display: flex;
+        padding: 99px 0px 103px 0px;
+    }
+
+    &__text {
+        flex: 0 0 33.333%;
+        font-style: italic;
+    }
+    &__text p:first-child {
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    &__social {
+        flex: 0 0 33.333%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__socialico {
+        padding: 0px 7.5px 0px 7.5px;
+    }
+
+    &__credits {
+        flex: 0 0 33.333%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__by {
+        padding: 11px 9px 0px 0px;
+    }
+
+    &__signature {
+    }
+}
